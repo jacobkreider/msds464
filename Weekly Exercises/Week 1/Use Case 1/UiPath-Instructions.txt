@@ -1,0 +1,19 @@
+Project 1: Sample Robot
+Objective : Create a end to end flow where a robot can read each file in a particular directory and identify files that meet certain requirements.
+- Start > Project > New Blank Project > Enter Name, location & description
+- Create a folder called sample-files within the location specified above
+- Create 3 files called file1, file2, file3, file4 within that folder
+- Add "This is a mock file" text to file2 and leave others empty
+- Building blocks of a Robot is activities. Begin a Robot by using a sequence or a flowchart on the main page.
+- On the Activities pane ( make sure the activities tab is highlighted below ) click on Available > Workflow > control > Sequence { for flowchart Available > Workflow > Flowchart > Flowchart ) and drag it on the Main Canvas. 
+- Click on the sequence header and call it FindingTheMockText
+- Using the search activities at the top of the Activities pane, search on Assign and drag the assign activity into the Main Canvas.
+- Click on Assign and create a variable and name it AllFiles. Go to the varibles tab below the Main canvas and change the Variable Type to an array of strings by clicking on dropdown, selecting Array of [T] and Select Types to String from the pop-up menu
+- Assign AllFiles variable to Directory.GetFiles ( right hand type ahead ) and on double click use path As String option. Enter the sample-files location ( example "C:\sample-files ) within paranthesis
+- Use another activity : for Each and drag the activity after the assign. foreach enter:file in enter: AllFiles
+- Within the Body activity, pull in the read text file activity. Drag the file variable from Foreach and pull it into the Read Text File window. Please make sure to convert it to a string by file.tostring.
+- Go to Properties tab of the Read text file activity and Right Click on output > content and name the variable FileContents
+- Use the If activity and drag it under the Read text file activity. This allows us to define if the condition is true do something ( left box ) else do the other ( right box ). Type in FileContents.ToString = "" within the If Condition block, and then pull in the Append Line Activity into the Then Box.In the File Name, Text must be quoted, add a location and the file name ( for Ex: C:\results.txt ) and then in the next line add in file.ToString + "is empty". Copy the same Append activity into the Else block and change the file name and the file.ToString + "has text" + FileContents.ToString
+
+- Run the Robot ( Green button at the top left or press F5 ). A results file will be created in the directory specified.
+

@@ -1,0 +1,26 @@
+{
+  "name": "my-first-robot",
+  "description": "My first robot",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.5.2]",
+    "UiPath.Mail.Activities": "[1.3.0]",
+    "UiPath.System.Activities": "[19.3.0]",
+    "UiPath.UIAutomation.Activities": "[19.3.0]"
+  },
+  "schemaVersion": "3.2",
+  "studioVersion": "17.1.6498.12628",
+  "projectVersion": "1.0.6504.38506",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ]
+  },
+  "projectType": "Workflow",
+  "libraryOptions": {
+    "includeOriginalXaml": false,
+    "privateWorkflows": []
+  }
+}
