@@ -1,0 +1,4 @@
+﻿D:\MSDS-git\msds464\Weekly Exercises\My Work\FirstUseCase\FirstUseCase\sample-files\File1.txtis empty
+D:\MSDS-git\msds464\Weekly Exercises\My Work\FirstUseCase\FirstUseCase\sample-files\File2.txthas text:This is a mock file
+D:\MSDS-git\msds464\Weekly Exercises\My Work\FirstUseCase\FirstUseCase\sample-files\File3.txtis empty
+D:\MSDS-git\msds464\Weekly Exercises\My Work\FirstUseCase\FirstUseCase\sample-files\File4.txtis empty
